@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goofy Clickings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="left">
+                <p>tokens <br /><span class="gem-cost pink-text">0</span></p>
+                <div class="gem-img-container">
+                    <img src="/assets/gemers.png" alt="" srcset="" class="gem-image" onclick="incrementGem(event)" draggable="false">
+                </div>     
+            </div>
+            <div class="right">
+
+                <div class="upgrade" onclick="buyUpgrade('clicker')">
+                    <div class="left-section">
+                        <img src="/assets/image__2_-removebg-preview.png" alt="" class="upgrade-img" draggable="false">
+                    </div>
+                    <div class="mid-section">
+                        <h4>clicker</h4>
+                        <div class="cost-info">
+                            <p class="cost-text"><span class="clicker-cost">10</span></p>
+                            <img src="/assets/gemers.png" alt="" srcset="" class="gem-img" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">Degree : <span class="clicker-level pink-text">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clicker-increase">1</span> tokens <br /> per second
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyUpgrade('pickaxe')">
+                    <div class="left-section">
+                        <img src="/assets/pickaxe.png" alt="" class="upgrade-img" draggable="false">
+                    </div>
+                    <div class="mid-section">
+                        <h4>pickaxe</h4>
+                        <div class="cost-info">
+                            <p class="cost-text"><span class="pickaxe-cost">500</span></p>
+                            <img src="/assets/gemers.png" alt="" srcset="" class="gem-img" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">Degree : <span class="pickaxe-level pink-text">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="pickaxe-increase">25</span> tokens <br /> per second
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyUpgrade('mine-hub')">
+                    <div class="left-section">
+                        <img src="/assets/cave.png" alt="" class="upgrade-img" draggable="false">
+                    </div>
+                    <div class="mid-section">
+                        <h4>mine</h4>
+                        <div class="cost-info">
+                            <p class="cost-text"><span class="mine-hub-cost">4500</span></p>
+                            <img src="/assets/gemers.png" alt="" srcset="" class="gem-img" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">Degree : <span class="mine-hub-level pink-text">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="mine-hub-increase">50</span> tokens <br /> per second
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyUpgrade('wheel-of-fate')">
+                    <div class="left-section">
+                        <img src="/assets/image__4_-removebg-preview.png" alt="" class="upgrade-img" draggable="false">
+                    </div>
+                    <div class="mid-section">
+                        <h4>wheel</h4>
+                        <div class="cost-info">
+                            <p class="cost-text"><span class="wheel-of-fate-cost">25000</span></p>
+                            <img src="/assets/gemers.png" alt="" srcset="" class="gem-img" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">Degree : <span class="wheel-of-fate-level pink-text">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="wheel-of-fate-increase">20</span>(random) tokens <br /> per second
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyUpgrade('miner')">
+                    <div class="left-section">
+                        <img src="/assets/creepycore.png" alt="" class="upgrade-img" draggable="false">
+                    </div>
+                    <div class="mid-section">
+                        <h4>???</h4>
+                        <div class="cost-info">
+                            <p class="cost-text"><span class="miner-cost">6060606060</span></p>
+                            <img src="/assets/gemers.png" alt="" srcset="" class="gem-img" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">Degree : <span class="miner-level pink-text">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="miner-increase">66600000</span> tokens <br /> per second
+                        </p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="statistics">
+            <div class="texts">
+                <p>tpc : <span id="gpc-text" class="pink-text">1</span></p>
+                <p>tps : <span id="gps-text" class="pink-text">0</span></p>
+            </div>
+        </div>
+
+        <div class="util-buttons">
+            <button class="util-button" onclick="save()">
+                Save
+            </button>
+            <button class="util-button" onclick="load()">
+                Load
+            </button>
+        </div>
+    </section>
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
